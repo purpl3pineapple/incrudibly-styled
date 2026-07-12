@@ -1,0 +1,12 @@
+{
+	"name": "incrudibly-styled",
+	"version": "1.0.0",
+	"description": "Shared CSS theme, served via jsDelivr's GitHub CDN mode.",
+	"license": "MIT",
+	"scripts": {
+		"build": "lightningcss --minify src/incrudibly-styled.css -o dist/incrudibly-styled.min.css"
+	},
+	"devDependencies": {
+		"lightningcss-cli": "^1.30.1"
+	}
+}
