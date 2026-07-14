@@ -917,10 +917,6 @@ label.form-control {
 		input {
 			margin-right: 0.5rem;
 		}
-
-		.control-alerts {
-			flex-basis: 100%;
-		}
 	}
 
 	&:has(input:first-of-type:not([type="checkbox"], [type="radio"])) {
@@ -1075,6 +1071,10 @@ label.form-control {
 			cursor: not-allowed;
 		}
 	}
+}
+
+label.form-control:has(input:first-of-type:is([type="checkbox"], [type="radio"])) .control-alerts {
+	flex-basis: 100%;
 }
 
 input {
