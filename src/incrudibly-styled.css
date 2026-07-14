@@ -864,7 +864,7 @@ label.form-control {
 		margin-left: 0.25rem;
 		color: var(--form-control-invalid);
 		content: "✷";
-		font-size: 1.1em;
+		font-size: 0.75rem;
 		font-weight: 600;
 		vertical-align: super;
 	}
