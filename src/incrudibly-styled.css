@@ -811,6 +811,20 @@ label.form-control {
 		display: flex;
 	}
 
+	.control-alerts {
+		&:empty {
+			display: none;
+		}
+
+		.markdown-alert:first-child {
+			margin-top: 0;
+		}
+
+		.markdown-alert:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	.tooltip {
 		margin-left: auto;
 		font-size: 1rem;
