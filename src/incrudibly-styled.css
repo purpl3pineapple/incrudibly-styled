@@ -1850,7 +1850,7 @@ fieldset.list {
 	}
 
 	&.open {
-		width: 15.6125rem;
+		width: 20rem;
 		display: flex;
 		flex-direction: column;
 
@@ -1884,11 +1884,11 @@ body:has(.drawer.push) main {
 }
 
 body:has(.drawer.push.orient-start.open) main {
-	margin-left: 15.6125rem;
+	margin-left: 20rem;
 }
 
 body:has(.drawer.push.orient-end.open) main {
-	margin-right: 15.6125rem;
+	margin-right: 20rem;
 }
 
 body:has(.drawer.static.orient-start) main {
