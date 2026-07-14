@@ -49,7 +49,8 @@
 	--form-control-border: light-dark(#dadce0, #5f6368);
 	--form-control-border-strong: light-dark(#4285f4, #5b9aff);
 	--form-control-border-subtle: light-dark(#e8eaed, #3c4043);
-	--form-control-bg-selected: light-dark(#d7f0dc, #234730);
+	--form-control-bg-selected: light-dark(color-mix(in srgb, var(--primary) 18%, var(--surface)),
+			color-mix(in srgb, var(--primary) 30%, var(--surface)));
 	--form-control-checkmark: light-dark(#34a853, #5cbd6f);
 	--form-control-invalid: light-dark(#dc2626, #f87171);
 	--form-control-valid: light-dark(#34a853, #5cbd6f);
