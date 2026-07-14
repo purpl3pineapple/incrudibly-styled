@@ -1009,40 +1009,40 @@ label.form-control {
 		}
 	}
 
-	&:has(input:first-of-type[type="text"]) i::before {
+	&:has(input:first-of-type[type="text"]) i:has(+ input)::before {
 		mask-image: var(--icon-description);
 		-webkit-mask-image: var(--icon-description);
 	}
 
-	&:has(input:first-of-type[type="url"]) i::before {
+	&:has(input:first-of-type[type="url"]) i:has(+ input)::before {
 		mask-image: var(--icon-open-in-new);
 		-webkit-mask-image: var(--icon-open-in-new);
 	}
 
-	&:has(input:first-of-type[type="tel"]) i::before {
+	&:has(input:first-of-type[type="tel"]) i:has(+ input)::before {
 		mask-image: var(--icon-call);
 		-webkit-mask-image: var(--icon-call);
 	}
 
-	&:has(input:first-of-type[type="search"]) i::before {
+	&:has(input:first-of-type[type="search"]) i:has(+ input)::before {
 		mask-image: var(--icon-search);
 		-webkit-mask-image: var(--icon-search);
 	}
 
-	&:has(input:first-of-type[type="password"]) i::before {
+	&:has(input:first-of-type[type="password"]) i:has(+ input)::before {
 		mask-image: var(--icon-lock);
 		-webkit-mask-image: var(--icon-lock);
 	}
 
-	&:has(input:first-of-type[type="email"]) i::before {
+	&:has(input:first-of-type[type="email"]) i:has(+ input)::before {
 		content: "@";
 	}
 
-	&:has(input:first-of-type[type="number"]) i::before {
+	&:has(input:first-of-type[type="number"]) i:has(+ input)::before {
 		content: "#";
 	}
 
-	&:has(input:first-of-type[data-type="currency"]) i::before {
+	&:has(input:first-of-type[data-type="currency"]) i:has(+ input)::before {
 		content: "$";
 	}
 
@@ -2085,11 +2085,11 @@ details[open]>summary::before {
 
 /* Shared box/masking mechanics for SVG-glyph icons (Material Symbols).
 	Each icon site only needs to set (-webkit-)mask-image; see icons/ for sources. */
-:is(.form-control, fieldset.wizard):has(input:first-of-type[type="text"]) i::before,
-:is(.form-control, fieldset.wizard):has(input:first-of-type[type="url"]) i::before,
-:is(.form-control, fieldset.wizard):has(input:first-of-type[type="tel"]) i::before,
-:is(.form-control, fieldset.wizard):has(input:first-of-type[type="search"]) i::before,
-:is(.form-control, fieldset.wizard):has(input:first-of-type[type="password"]) i::before,
+:is(.form-control, fieldset.wizard):has(input:first-of-type[type="text"]) i:has(+ input)::before,
+:is(.form-control, fieldset.wizard):has(input:first-of-type[type="url"]) i:has(+ input)::before,
+:is(.form-control, fieldset.wizard):has(input:first-of-type[type="tel"]) i:has(+ input)::before,
+:is(.form-control, fieldset.wizard):has(input:first-of-type[type="search"]) i:has(+ input)::before,
+:is(.form-control, fieldset.wizard):has(input:first-of-type[type="password"]) i:has(+ input)::before,
 i.toast-icon::before,
 i.preview-icon::before,
 i.copy-icon::before,
