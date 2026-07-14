@@ -113,14 +113,14 @@
 	50%,
 	70%,
 	90% {
-		-webkit-transform: translateX(-5px);
+		-webkit-transform: translateX(-0.3125rem);
 	}
 
 	20%,
 	40%,
 	60%,
 	80% {
-		-webkit-transform: translateX(5px);
+		-webkit-transform: translateX(0.3125rem);
 	}
 }
 
@@ -136,14 +136,14 @@
 	50%,
 	70%,
 	90% {
-		transform: translateX(-5px);
+		transform: translateX(-0.3125rem);
 	}
 
 	20%,
 	40%,
 	60%,
 	80% {
-		transform: translateX(5px);
+		transform: translateX(0.3125rem);
 	}
 }
 
@@ -769,6 +769,15 @@ span.tag {
 	}
 }
 
+#feedback-form-buttons button[type="reset"] {
+	color: var(--brand-bar-text);
+	border-color: var(--brand-bar-muted);
+
+	&:hover {
+		background-color: var(--brand-bar-hover);
+	}
+}
+
 #app-form .form-buttons {
 	gap: 1rem;
 	margin-right: 3rem;
@@ -843,6 +852,11 @@ label.form-control {
 
 	&:has(:is(input, select, textarea):first-of-type:user-invalid) .label-text {
 		color: var(--form-control-invalid);
+	}
+
+	&:has(:is(input, select, textarea):first-of-type:user-invalid) {
+		-webkit-animation: shake 0.5s;
+		animation: shake 0.5s;
 	}
 
 	&:has(:is(input, select, textarea):first-of-type:user-valid) .label-text {
@@ -2429,6 +2443,15 @@ input[type="checkbox"].switch {
 
 [data-theme="light"] {
 	color-scheme: light;
+}
+
+[data-theme="dark"] .tooltip .tooltip-text {
+	background-color: whitesmoke;
+	color: #202124;
+
+	&::after {
+		border-top-color: whitesmoke;
+	}
 }
 
 [data-theme="dark"] {
