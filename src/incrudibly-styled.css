@@ -1567,6 +1567,10 @@ form {
 			}
 		}
 
+		&:not(.wizard, .list) {
+			grid-column: span 12;
+		}
+
 		&.wizard {
 			width: auto;
 			margin: 0;
