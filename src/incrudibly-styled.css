@@ -777,7 +777,7 @@ span.tag {
 	}
 }
 
-#feedback-form label.form-control {
+#feedback-form label.form-control:has(input:first-of-type:is([type="checkbox"], [type="radio"])) {
 	color: var(--brand-bar-text);
 
 	.tooltip {
