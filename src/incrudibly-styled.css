@@ -778,6 +778,18 @@ span.tag {
 	}
 }
 
+#feedback-form label.form-control {
+	color: var(--brand-bar-text);
+
+	.tooltip {
+		color: var(--brand-bar-muted);
+
+		&:hover {
+			color: var(--brand-bar-text);
+		}
+	}
+}
+
 #app-form .form-buttons {
 	gap: 1rem;
 	margin-right: 3rem;
