@@ -1574,12 +1574,10 @@ form {
 		&.wizard {
 			width: auto;
 			margin: 0;
-			grid-column: auto / span 3;
 		}
 
 		&.list {
 			width: auto;
-			grid-column: auto / span 3;
 		}
 	}
 
