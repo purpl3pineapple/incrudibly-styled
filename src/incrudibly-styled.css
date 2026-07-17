@@ -708,10 +708,6 @@ span.tag {
 	&.w-4 {
 		grid-column: span 3;
 	}
-
-	&.w-auto {
-		grid-column: auto;
-	}
 }
 
 #app-form {
