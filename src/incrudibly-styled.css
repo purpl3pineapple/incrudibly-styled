@@ -1595,6 +1595,11 @@ form {
 }
 
 fieldset.list {
+	> label,
+	> ul {
+		grid-column: span 12;
+	}
+
 	.tooltip {
 		margin-left: 0.375rem;
 	}
