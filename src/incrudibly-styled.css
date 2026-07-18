@@ -2017,6 +2017,53 @@ body:has(.drawer.static.orient-end) main {
 	}
 
 	#panel-records {
+		.paginator {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
+			.page-content {
+				display: flex;
+				flex-direction: column;
+				gap: 0.5rem;
+
+				details {
+					margin-bottom: 0;
+				}
+			}
+
+			.page-nav {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 0.25rem;
+
+				a {
+					display: grid;
+					place-items: center;
+					min-width: 2.5rem;
+					min-height: 2.5rem;
+					padding: 0.375rem 0.625rem;
+					border: 0.0625rem solid var(--border);
+					border-radius: 0.1875rem;
+					background-color: var(--surface);
+					color: var(--text);
+					font-weight: 600;
+					text-decoration: none;
+
+					&:hover {
+						background-color: var(--surface-2);
+					}
+
+					&[aria-current="page"] {
+						border-color: var(--primary);
+						background-color: var(--primary);
+						color: var(--on-primary);
+					}
+				}
+			}
+		}
+
 		details {
 			background-color: var(--surface);
 			border: 0.0625rem solid var(--border);
