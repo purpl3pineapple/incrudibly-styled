@@ -210,6 +210,10 @@ body {
 	height: 100%;
 }
 
+[hidden] {
+	display: none !important;
+}
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -1630,6 +1634,10 @@ fieldset.list {
 		display: flex;
 		align-items: center;
 		gap: 0.5rem;
+
+		input[type="file"] {
+			width: 12.5rem;
+		}
 	}
 
 	.list-remove {
