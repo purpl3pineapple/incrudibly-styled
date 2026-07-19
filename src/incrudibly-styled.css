@@ -672,6 +672,31 @@ span.tag {
 	font-weight: 700;
 }
 
+span.tag.note {
+	background-color: light-dark(#0969da, #4493f8);
+	color: light-dark(#ffffff, #08111f);
+}
+
+span.tag.tip {
+	background-color: light-dark(#1a7f37, #3fb950);
+	color: light-dark(#ffffff, #071b0d);
+}
+
+span.tag.important {
+	background-color: light-dark(#8250df, #ab7df8);
+	color: light-dark(#ffffff, #1b1033);
+}
+
+span.tag.warning {
+	background-color: light-dark(#9a6700, #d29922);
+	color: light-dark(#ffffff, #201600);
+}
+
+span.tag.caution {
+	background-color: light-dark(#cf222e, #f85149);
+	color: light-dark(#ffffff, #2a0e0e);
+}
+
 .tag-cloud {
 	display: flex;
 	flex-wrap: wrap;
