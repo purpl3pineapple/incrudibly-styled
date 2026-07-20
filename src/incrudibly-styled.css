@@ -2270,7 +2270,7 @@ i.copy-icon::before {
 
 .float-stack-start {
 	position: fixed;
-	bottom: 4rem;
+	top: 5rem;
 	left: 1.5rem;
 	z-index: 1;
 	display: flex;
