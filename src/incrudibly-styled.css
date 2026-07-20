@@ -1547,6 +1547,7 @@ form {
 
 	fieldset {
 		width: 100%;
+		height: fit-content;
 		margin: 0 0 1.25rem;
 		color: var(--text);
 		display: grid;
