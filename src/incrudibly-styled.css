@@ -651,8 +651,11 @@ main {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		font-size: 3.125rem;
-		color: var(--brand-bar-text);
+		width: 3rem;
+		height: 3rem;
+		border: 0.3125rem solid rgb(255 255 255 / 30%);
+		border-top-color: var(--brand-bar-text);
+		border-radius: 50%;
 		-ms-transform: translate(-50%, -50%);
 		-webkit-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
