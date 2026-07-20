@@ -2066,7 +2066,7 @@ body:has(.drawer.static.orient-end) main {
 	align-items: stretch;
 	flex: 1;
 	gap: 1rem;
-	padding-inline: 2.5rem;
+	padding-inline: 3.5rem;
 }
 
 .tabulator {
