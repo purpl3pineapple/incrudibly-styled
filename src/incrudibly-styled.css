@@ -2182,7 +2182,6 @@ body:has(.drawer.static.orient-end) main {
 			summary {
 				display: flex;
 				align-items: center;
-				justify-content: space-between;
 				gap: 1rem;
 				cursor: pointer;
 				padding: 0.75rem 1rem;
