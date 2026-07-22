@@ -1673,7 +1673,7 @@ fieldset.list {
 			width: calc(100% - 4.25rem);
 		}
 
-		&:not(:first-child) input {
+		&:not(:first-child) input:not([type="file"]) {
 			width: stretch;
 		}
 	}
@@ -1692,6 +1692,10 @@ fieldset.list {
 		cursor: pointer;
 		background-color: transparent;
 		color: var(--danger);
+
+		li:has(input[type="file"]) & {
+			margin: 0;
+		}
 
 		&:hover,
 		&:focus-visible {
