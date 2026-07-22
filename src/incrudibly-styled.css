@@ -1692,7 +1692,7 @@ fieldset.list {
 	}
 }
 
-.form-preview {
+.form-utility {
 	background: var(--surface);
 	border: 0.0625rem solid var(--border);
 	border-radius: 0.25rem;
@@ -1718,7 +1718,10 @@ fieldset.list {
 		font-size: 1rem;
 		color: var(--text);
 	}
+}
 
+
+.form-preview {
 	.copy-preview {
 		display: block;
 		width: 95%;
