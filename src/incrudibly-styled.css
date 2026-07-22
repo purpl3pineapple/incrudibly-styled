@@ -1668,6 +1668,14 @@ fieldset.list {
 		input[type="file"] {
 			width: 12.5rem;
 		}
+
+		&:first-child input {
+			width: calc(100% - 4.25rem);
+		}
+
+		&:not(:first-child) input {
+			width: stretch;
+		}
 	}
 
 	.list-remove {
@@ -1677,6 +1685,7 @@ fieldset.list {
 		line-height: 1;
 		width: 1.75rem;
 		height: 1.75rem;
+		margin: 0 1rem;
 		padding: 0;
 		border: 0.0625rem solid var(--border);
 		border-radius: 50%;
