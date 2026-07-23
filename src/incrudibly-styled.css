@@ -2016,7 +2016,6 @@ fieldset.list {
 
 		.links {
 			display: none;
-			padding-block: 0.25rem;
 			background-color: var(--brand-bar-surface);
 
 			a {
