@@ -2004,6 +2004,10 @@ fieldset.list {
 				font-size: 1rem;
 				color: var(--brand-bar-muted);
 
+				&.active {
+					color: var(--on-primary);
+				}
+
 				&:hover,
 				&:focus-visible {
 					background-color: var(--brand-bar-hover);
