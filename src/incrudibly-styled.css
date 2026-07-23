@@ -384,6 +384,26 @@ main {
 	}
 }
 
+.embed-modal {
+	width: min(96%, 72rem);
+	max-block-size: 90dvh;
+
+	.embed-modal-content {
+		padding: 1.25rem;
+	}
+
+	.embed-modal-header {
+		margin: 0 3rem 1rem 0;
+	}
+
+	.embed-modal-frame {
+		display: block;
+		inline-size: 100%;
+		block-size: min(72dvh, 52rem);
+		border: 0;
+	}
+}
+
 .modal-note .modal-header {
 	color: light-dark(#0969da, #4493f8);
 
