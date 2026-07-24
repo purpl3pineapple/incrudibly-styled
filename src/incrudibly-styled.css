@@ -1850,6 +1850,10 @@ fieldset.list {
 	}
 }
 
+#panel-records details {
+	margin-inline-start: 0.5rem;
+}
+
 /* ////////// [ Navigation component styling ] ////////// */
 
 #topnav {
