@@ -1957,6 +1957,14 @@ fieldset.list {
 	padding-top: 3.5rem;
 	transition: 0.5s;
 
+	.sidenav-menu,
+	.links {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
 	.close-button {
 		position: absolute;
 		top: 0;
