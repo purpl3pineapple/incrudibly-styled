@@ -1555,6 +1555,11 @@ textarea {
 	}
 }
 
+fieldset.wizard:has(> label.form-control[hidden]) {
+	display: none;
+	opacity: 0;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
