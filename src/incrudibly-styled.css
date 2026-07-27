@@ -858,15 +858,11 @@ label.form-control {
 	gap: 0.25rem;
 	flex: 0 0 100%;
 	font-size: 1.25rem;
-	padding: 0.25rem 0.375rem;
-
-	&:not(:is(fieldset.wizard, fieldset.list) *) {
-		padding: 0.75rem;
-		border: 0.125rem solid var(--border);
-		border-radius: 0.375rem;
-		background: var(--surface);
-		box-shadow: 0 0.25rem 0.75rem light-dark(rgb(0 0 0 / 12%), rgb(0 0 0 / 45%));
-	}
+	padding: 0.75rem;
+	border: 0.125rem solid var(--border);
+	border-radius: 0.375rem;
+	background: var(--surface);
+	box-shadow: 0 0.25rem 0.75rem light-dark(rgb(0 0 0 / 12%), rgb(0 0 0 / 45%));
 
 	.label-text {
 		color: inherit;
@@ -1149,6 +1145,17 @@ label.form-control {
 			cursor: not-allowed;
 		}
 	}
+}
+
+fieldset.wizard:not(:is([data-type="checkbox"], [data-type="radio"]))
+	> label.form-control:first-child,
+fieldset.list > label.form-control,
+label.form-control:has(input:first-of-type:is([type="checkbox"], [type="radio"])) {
+	padding: 0.25rem 0.375rem;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
 }
 
 label.form-control:has(input:first-of-type:is([type="checkbox"], [type="radio"])) .control-alerts {
@@ -1659,6 +1666,14 @@ fieldset.wizard {
 	border-radius: 0.375rem;
 	background: var(--surface);
 	box-shadow: 0 0.25rem 0.75rem light-dark(rgb(0 0 0 / 12%), rgb(0 0 0 / 45%));
+}
+
+fieldset.wizard:is([data-type="checkbox"], [data-type="radio"]) {
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
 }
 
 fieldset.list {
