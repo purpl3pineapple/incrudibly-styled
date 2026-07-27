@@ -1604,13 +1604,6 @@ textarea {
   }
 }
 
-fieldset.wizard:not([hidden]):has(
-    > label.form-control
-      input:first-of-type:is([type="checkbox"], [type="radio"])
-  ) {
-  display: contents;
-}
-
 form {
   display: flex;
   flex-direction: column;
