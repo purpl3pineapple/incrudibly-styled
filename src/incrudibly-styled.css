@@ -1676,6 +1676,14 @@ fieldset.wizard:is([data-type="checkbox"], [data-type="radio"]) {
 	box-shadow: none;
 }
 
+fieldset.wizard:not([data-type="checkbox"]):not([data-type="radio"]) {
+	padding: 0.75rem !important;
+	border: 0.125rem solid var(--border) !important;
+	border-radius: 0.375rem !important;
+	background: var(--surface) !important;
+	box-shadow: 0 0.25rem 0.75rem light-dark(rgb(0 0 0 / 12%), rgb(0 0 0 / 45%)) !important;
+}
+
 fieldset.list {
 	> label,
 	> ul {
