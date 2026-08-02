@@ -2106,7 +2106,7 @@ fieldset.list {
     }
 
     &.open {
-      .dropdown-button {
+      > .dropdown-button {
         background-color: var(--brand-bar-hover);
         color: var(--brand-bar-text);
 
@@ -2115,7 +2115,7 @@ fieldset.list {
         }
       }
 
-      .links {
+      > .links {
         display: block;
       }
     }
