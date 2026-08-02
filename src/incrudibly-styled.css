@@ -23,6 +23,7 @@
   /* Neutral brand bars to match the Google-like palette */
   --brand-bar: light-dark(#202124, #303134);
   --brand-bar-surface: light-dark(#303134, #202124);
+  --brand-bar-surface-2: color-mix(in srgb, var(--brand-bar-surface), var(--brand-bar));
   --brand-bar-text: light-dark(#ffffff, #e8e8ea);
   --brand-bar-muted: light-dark(#bdc1c6, #9aa0a6);
   --brand-bar-hover: light-dark(rgb(255 255 255 / 12%), rgb(255 255 255 / 14%));
@@ -2102,6 +2103,14 @@ fieldset.list {
           background-color: var(--brand-bar-hover);
           color: var(--brand-bar-text);
         }
+      }
+    }
+
+    .nav-dropdown {
+      background-color: var(--brand-bar-surface-2);
+
+      .links {
+        background-color: var(--brand-bar-surface-2);
       }
     }
 
